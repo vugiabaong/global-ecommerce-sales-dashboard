@@ -25,25 +25,25 @@ This project was built entirely in Power BI Desktop, including data import, data
 
 The overview page summarizes total sales, total profit, quantity sold, profit margin, and overall business performance.
 
-![Overview Dashboard](images/overview.png)
+![Overview Dashboard](images/1.overview.png)
 
 ### Product & Category
 
 This page compares category-level sales, profit, margin, and product performance to identify both revenue drivers and margin opportunities.
 
-![Product and Category Dashboard](images/product-category.png)
+![Product and Category Dashboard](images/2.product_category.png)
 
 ### Region & Segment
 
 This page analyzes sales and profitability across regions and customer segments to understand where the business performs strongest.
 
-![Region and Segment Dashboard](images/region-segment.png)
+![Region and Segment Dashboard](images/3.region_segment.png)
 
 ### Discount & Profitability
 
 This page reviews the relationship between discount levels, profit margin, and negative-margin orders.
 
-![Discount and Profitability Dashboard](images/discount-profitability.png)
+![Discount and Profitability Dashboard](images/4.discount_profitability.png)
 
 ## 5. Key Business Insights
 
