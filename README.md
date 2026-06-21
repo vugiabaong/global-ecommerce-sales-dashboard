@@ -1,269 +1,112 @@
-# Global E-commerce Sales Dashboard | Power BI Portfolio Project
+# Global E-commerce Sales Dashboard
 
 ## 1. Project Overview
 
-This project analyzes a global e-commerce sales dataset using **Power BI** to understand revenue performance, profitability, product/category contribution, regional performance, customer segments, and promotion-related margin risks.
+This project presents a Power BI dashboard designed to analyze global e-commerce sales performance across categories, regions, customer segments, discounts, shipping costs, and profitability.
 
-The main goal is to build a business-facing dashboard that helps answer:
+The dashboard uses a transaction-level dataset of 2,000 orders from 2023 to 2025 across 20 countries, 5 regions, and 4 product categories. The main focus is to evaluate not only revenue performance, but also margin quality and potential profitability risks.
 
-- Which categories and products drive the highest revenue and profit?
-- Which regions and customer segments contribute most to sales?
-- How do discounts and shipping costs affect profitability?
-- Which products should be scaled, monitored, or optimized?
+## 2. Business Objective
 
-> Status: Dashboard completed in Power BI. Current README includes preliminary analysis based on the dataset and dashboard structure.
+The objective of this dashboard is to support e-commerce performance monitoring by answering the following questions:
 
----
+* Which product categories are the main revenue and profit drivers?
+* Which regions and customer segments contribute most to business performance?
+* How do discounts and shipping costs affect profitability?
+* Which categories or order groups may require pricing, promotion, or cost optimization?
 
-## 2. Dataset Summary
+## 3. Tool Used
 
-| Item | Description |
-|---|---|
-| Dataset | Global E-commerce Sales |
-| Rows | 2,000 orders |
-| Columns | 15 fields |
-| Period | 2023-01-02 to 2025-12-31 |
-| Countries | 20 |
-| Regions | 5 |
-| Product categories | 4 |
-| Products | 40 |
+This project was built entirely in Power BI Desktop, including data import, data modeling, measure creation, and dashboard visualization.
 
-### Main Fields
+## 4. Dashboard Preview
 
-- `Order_ID`
-- `Order_Date`
-- `Customer_Name`
-- `Customer_Segment`
-- `Country`
-- `Region`
-- `Product_Category`
-- `Product_Name`
-- `Quantity`
-- `Unit_Price`
-- `Discount_Percent`
-- `Total_Sales`
-- `Shipping_Cost`
-- `Profit`
-- `Payment_Method`
+### Overview
 
----
-
-## 3. Tools Used
-
-- **Power BI**: data modeling, DAX measures, dashboard design, interactive slicers
-- **Power Query**: data type checking and transformation
-- **CSV dataset**: raw sales data source
-- **GitHub**: project documentation and portfolio presentation
-
----
-
-## 4. Dashboard Pages
-
-The Power BI report contains 4 pages:
-
-### Page 1: Overview
-
-Purpose: Give a quick business snapshot of overall sales performance.
-
-Main visuals:
-
-- KPI cards: Total Sales, Total Orders, Total Profit, Profit Margin, AOV, Total Quantity
-- Monthly Sales & Profit Trend
-- Category Revenue Overview
-- Top 5 Products by Sales
-- Sales by Region
-- Customer Segment Revenue Mix
-
-### Page 2: Product & Category
-
-Purpose: Evaluate product and category performance.
-
-Main visuals:
-
-- Product ranking by sales and profit
-- Product portfolio scatter plot
-- Recommended Product Actions table
-- Category Profitability matrix
-- Product and category KPI cards
-
-### Page 3: Region & Segment
-
-Purpose: Compare business performance across regions, countries, and customer groups.
-
-Main visuals:
-
-- Regional Revenue and Margin Performance
-- Country-level revenue/profit comparison
-- Customer Segment Value Overview
-- Customer Segment Strength by Region
-
-### Page 4: Discount & Profitability
-
-Purpose: Analyze how promotions and cost pressure affect margin.
-
-Main visuals:
-
-- Revenue and Margin by Promotion Level
-- Category Margin Pressure Summary
-- Promotion Risk by Product
-- Loss-making Order Risk by Promotion Level
-- KPI cards for Negative Margin Orders, Average Discount, Shipping Cost %
-
----
-
-## 5. Key Metrics
-
-| Metric | Value |
-|---|---:|
-| Total Sales | $484,559.34 |
-| Total Profit | $158,872.32 |
-| Profit Margin | 32.79% |
-| Total Orders | 2,000 |
-| Total Quantity | 7,115 |
-| Shipping Cost % of Sales | 5.33% |
-| Average Discount | 8.57% |
-| Negative Margin Orders | 272 |
-
----
-
-## 6. Preliminary Insights
-
-### Insight 1: Furniture is the largest revenue driver, but not the most profitable category by margin.
-
-Furniture generated the highest revenue at **$256.3K**, accounting for more than half of total sales. However, its profit margin was **31.7%**, lower than Technology and Clothing & Accessories.
-
-This suggests that Furniture is important for revenue scale, but margin improvement should be monitored through discount control, shipping cost management, or product mix optimization.
-
-### Insight 2: Clothing & Accessories has the strongest margin performance.
-
-Clothing & Accessories generated **$69.4K** in sales with the highest category margin of **37.6%**. Although its revenue is smaller than Furniture and Technology, it is a strong profitability category.
-
-This category could be used for margin-focused campaigns, cross-selling, or product expansion.
-
-### Insight 3: Office Supplies has weak profitability.
-
-Office Supplies contributed only **$19.4K** in sales and had the lowest profit margin at **17.1%**.
-
-This indicates that Office Supplies may need a deeper review of pricing, discounting, shipping cost, or product assortment before further scaling.
-
-### Insight 4: Europe and North America are the strongest regions.
-
-Europe generated the highest revenue at **$137.0K**, followed closely by North America at **$133.9K**. North America had a slightly higher margin at **33.8%**.
-
-These two regions should be prioritized for sales growth because they combine high revenue contribution with healthy profitability.
-
-### Insight 5: Discounts create visible margin risk.
-
-The dataset contains **272 negative-margin orders**. Since the dashboard includes promotion-level analysis, discount bands should be reviewed carefully to identify where promotions reduce profitability instead of creating valuable sales growth.
-
----
-
-## 7. Business Recommendations
-
-### 1. Protect and optimize Furniture revenue
-
-Furniture is the main revenue driver, so the business should not simply reduce focus on this category. Instead, it should improve profitability by:
-
-- Reviewing high-shipping-cost products
-- Reducing unnecessary discounts
-- Prioritizing best-performing furniture products
-- Creating bundles or premium positioning for high-value products
-
-### 2. Scale high-margin categories
-
-Clothing & Accessories has the strongest margin performance. The business can use this category to improve overall profitability by:
-
-- Promoting high-margin products
-- Testing cross-sell campaigns with Furniture or Technology
-- Highlighting best-selling products in seasonal campaigns
-
-### 3. Review Office Supplies before scaling
-
-Office Supplies currently has low revenue and low margin. Before investing more in this category, the business should:
-
-- Identify products with low or negative margin
-- Review discount strategy
-- Compare shipping cost impact
-- Consider removing or deprioritizing weak SKUs
-
-### 4. Prioritize Europe and North America
-
-Europe and North America should be treated as key markets because they generate the highest revenue. Recommended actions:
-
-- Maintain strong product availability
-- Run region-specific campaigns
-- Compare customer segment behavior across these two regions
-- Use these regions as benchmarks for lower-performing markets
-
-### 5. Monitor promotion risk
-
-Promotions should not be evaluated only by revenue. They should also be reviewed by:
-
-- Profit margin
-- Negative-margin order count
-- Shipping cost %
-- Average discount level
-
----
-
-## 8. Dashboard Preview
-
-> Add dashboard screenshots here after exporting them from Power BI.
-
-### Overview Page
+The overview page summarizes total sales, total profit, quantity sold, profit margin, and overall business performance.
 
 ![Overview Dashboard](images/overview.png)
 
-### Product & Category Page
+### Product & Category
+
+This page compares category-level sales, profit, margin, and product performance to identify both revenue drivers and margin opportunities.
 
 ![Product and Category Dashboard](images/product-category.png)
 
-### Region & Segment Page
+### Region & Segment
+
+This page analyzes sales and profitability across regions and customer segments to understand where the business performs strongest.
 
 ![Region and Segment Dashboard](images/region-segment.png)
 
-### Discount & Profitability Page
+### Discount & Profitability
+
+This page reviews the relationship between discount levels, profit margin, and negative-margin orders.
 
 ![Discount and Profitability Dashboard](images/discount-profitability.png)
 
----
+## 5. Key Business Insights
 
-## 9. Suggested Repository Structure
+### Furniture is the main revenue engine, but margin control is still important
 
-```text
-global-ecommerce-sales-dashboard/
-│
-├── README.md
-├── global_ecommerce_sales.csv
-├── global_ecommerce_sales_dashboard.pbix
-│
-└── images/
-    ├── overview.png
-    ├── product-category.png
-    ├── region-segment.png
-    └── discount-profitability.png
-```
+Furniture contributes approximately 52.9% of total sales and 51.1% of total profit, making it the most important category in terms of business scale. However, its profit margin is around 31.7%, slightly below the overall margin of 32.8% and lower than Technology and Clothing & Accessories.
 
----
+This suggests that Furniture should remain a core category for revenue growth, but discounting, shipping cost, and product-level profitability need to be monitored carefully.
 
-## 10. What I Learned
+### Clothing & Accessories is a margin opportunity
 
-Through this project, I practiced:
+Clothing & Accessories contributes only around 14.3% of total sales but delivers around 16.4% of total profit, with the highest category margin at approximately 37.6%.
 
-- Building an end-to-end Power BI dashboard from raw CSV data
-- Designing KPI cards and interactive dashboard pages
-- Creating DAX measures for sales, profit, margin, AOV, discount, and negative-margin risk
-- Translating dashboard findings into business insights and recommendations
-- Presenting a data project in a GitHub portfolio format
+From an e-commerce perspective, this category can be treated as a margin-enhancing category. It may be suitable for cross-selling, bundled offers, and targeted campaigns because it contributes stronger profitability despite a smaller revenue base.
 
----
+### Office Supplies shows weak unit economics
 
-## 11. Next Improvements
+Office Supplies contributes only around 4.0% of total sales and 2.1% of total profit, with the lowest category margin at approximately 17.1%.
 
-To improve this project further, I plan to:
+This category also has a high shipping-cost burden relative to sales, with shipping cost equal to roughly one-third of category sales. Most negative-margin orders also come from Office Supplies, indicating that low item value, shipping cost, and discounting may be eroding profitability.
 
-- Add deeper customer segment analysis
-- Compare year-over-year sales and profit trends
-- Add product-level action logic with clearer business rules
-- Improve dashboard storytelling and visual hierarchy
-- Add more detailed documentation of DAX measures and data cleaning steps
+### Europe and North America are the strongest regional markets
+
+Europe and North America together account for more than half of total sales and profit. They also show healthier margins compared with smaller regions such as Middle East & Africa and South America.
+
+This indicates that these two regions are the most commercially attractive markets for scaling campaigns, while smaller regions may require more careful review of logistics cost, pricing, and promotion efficiency.
+
+### Discounting has a clear impact on margin performance
+
+Profit margin declines as discount levels increase. Orders with no discount show the strongest margin, while orders with discounts between 21% and 30% have the weakest margin.
+
+This suggests that discounts should not be used only to increase sales volume. Promotion decisions should be tied to margin thresholds, average order value, and category-level profitability.
+
+### Corporate customers generate lower margin despite higher discount exposure
+
+The Corporate segment contributes meaningful sales volume, but it has the lowest margin among the three customer segments. It also receives a higher average discount compared with Consumer and Home Office segments.
+
+This suggests that Corporate promotion strategy should be reviewed to ensure that higher discounts are justified by order value, repeat purchase potential, or strategic customer value.
+
+## 6. Business Recommendations
+
+### Protect Furniture as the core revenue category
+
+Furniture should remain a priority category because of its strong contribution to both sales and profit. However, the business should monitor margin by product, especially for items with high shipping cost or frequent discounting.
+
+### Use Clothing & Accessories to improve profitability
+
+Clothing & Accessories can be used as a margin-supporting category. The business can promote this category through cross-selling, product bundles, or personalized recommendations to improve overall profit mix.
+
+### Redesign the Office Supplies strategy
+
+Office Supplies should not be scaled aggressively without improving its unit economics. Recommended actions include setting minimum order values, bundling low-ticket items, reviewing shipping thresholds, and reducing discounts on products with weak margins.
+
+### Set discount guardrails by category
+
+Discounts should be managed based on category margin rather than applied broadly. Higher discount levels should require a clear business reason, such as increasing basket size, clearing inventory, or acquiring high-value customers.
+
+### Prioritize high-performing regions while reviewing cost-heavy markets
+
+Europe and North America should be prioritized for growth campaigns due to their stronger revenue and margin performance. For Asia Pacific, South America, and Middle East & Africa, further analysis should focus on logistics cost, pricing, and market-level promotion efficiency.
+
+## 7. Dashboard File
+
+The full interactive Power BI report is available in this repository:
+
+`global_ecommerce_sales_dashboard.pbix`
